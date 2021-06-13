@@ -1,7 +1,7 @@
 import React from "react";
 import JobList from "../pages/JobList";
 import Filters from "./Filters";
-import { Grid, Image } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 
 export default function Dashboard() {
   return (
