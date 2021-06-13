@@ -19,7 +19,7 @@ export default function SignOut() {
 
         <Dropdown item text="İş Veren">
           <Dropdown.Menu>
-            <Dropdown.Item>
+            <Dropdown.Item> 
               <Button basic color='blue' >Giriş Yap</Button>
             </Dropdown.Item>
             <Dropdown.Item>
