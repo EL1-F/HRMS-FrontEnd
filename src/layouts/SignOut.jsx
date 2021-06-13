@@ -4,7 +4,7 @@ import { Button , Dropdown, Menu } from "semantic-ui-react";
 
 export default function SignOut() {
   return (
-    <div>
+    <div> 
       <Menu.Menu position='right'>
         <Dropdown item text="İş Arayan">
           <Dropdown.Menu>

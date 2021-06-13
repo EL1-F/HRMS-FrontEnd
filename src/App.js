@@ -12,7 +12,7 @@ function App() {
         <Dashboard />
       </Container>
     </div>
-  );
+  ); 
 }
 
 export default App;

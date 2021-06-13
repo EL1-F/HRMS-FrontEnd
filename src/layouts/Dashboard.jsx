@@ -13,7 +13,7 @@ export default function Dashboard() {
           </Grid.Column>
           <Grid.Column floated='right' width={13    }>
             <JobList />
-          </Grid.Column>
+          </Grid.Column> 
         </Grid.Row>
       </Grid>
     </div>

@@ -13,7 +13,7 @@ export default function Filters() {
               <Form.Field label="That one" control="input" type="checkbox" />
             </Form.Group>
           </Segment>
-        </Menu.Item>
+        </Menu.Item> 
 
         <Menu.Item>
           <Segment color="olive">

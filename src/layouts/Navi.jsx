@@ -17,7 +17,7 @@ export default function Navi() {
           <Menu.Item name="messages" />
 
           
-            <Menu.Menu position='right'>
+            <Menu.Menu position='right'> 
               <SignOut />
             </Menu.Menu>
           

@@ -13,7 +13,7 @@ export default function JobList() {
       .getJobPosition()
       .then((result) => setJobPositions(result.data.data));
   },[]);
-
+ 
   return (
     <div>
       <Card.Group>
