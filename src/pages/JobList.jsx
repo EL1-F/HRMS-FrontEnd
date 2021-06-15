@@ -1,19 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { Container, Divider, Icon , Grid , Card} from "semantic-ui-react";
+import { Container, Divider, Icon, Grid, Card, Label } from "semantic-ui-react";
 import JobPositionService from "../services/jobPositionService";
-
 
 export default function JobList() {
   const [jobPositions, setJobPositions] = useState([]);
 
   useEffect(() => {
-    //component yüklendiğinde çalışmasını istediğimiz kod buraya yazılacak
     let jobPositionService = new JobPositionService();
     jobPositionService
       .getJobPosition()
       .then((result) => setJobPositions(result.data.data));
-  },[]);
- 
+  }, []);
+
   return (
     <div>
       <Card.Group>
@@ -37,10 +35,13 @@ export default function JobList() {
             <Divider />
             <Container textAlign="left" className="jobListDown">
               <Grid>
-                <Grid.Column floated="left" width={10}>
-                  <Card.Meta>  </Card.Meta>
+                <Grid.Column floated="Left" width={10}>
+                  <Label.Group size="small">
+                    <Label>{position.wayOfWorking.wayName}</Label>
+                    <Label>{position.workingTime.timeName}</Label>
+                  </Label.Group>
                 </Grid.Column>
-                <Grid.Column floated="right" width={5}>
+                <Grid.Column floated="Left" width={5}>
                   Son Tarih
                   <Card.Description content={position.applicationDeadline} />
                 </Grid.Column>
