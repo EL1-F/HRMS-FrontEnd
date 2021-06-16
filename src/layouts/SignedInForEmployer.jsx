@@ -14,7 +14,7 @@ export default function SignedInForEmployer(props) {
         <Dropdown pointing="top right">
           <Dropdown.Menu>
             <Dropdown.Item text="İlanlar" icon="list" />
-            <Dropdown.Item text="İlan ver" icon="add" />
+            <Dropdown.Item onClick={props.isJobAddDashboard} text="İlan ver" icon="add" />
             <Dropdown.Item text="Bilgiler" icon="info" />
             <Dropdown.Item onClick={props.signOut} text="Çıkış yap" icon="sign-out" />
           </Dropdown.Menu>

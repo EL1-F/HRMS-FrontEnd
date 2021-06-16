@@ -12,7 +12,8 @@ export default function SignedIn(props) {
     <div>
       <Menu inverted>
         <Menu.Item position="right">
-          {props.isEmployer?<SignedInForEmployer signOut={props.signOut}/>:<SignedInForCandidate signOut={props.signOut}/>}
+          {props.isEmployer?<SignedInForEmployer signOut={props.signOut} isJobAddDashboard={props.isJobAddDashboard}/>
+          :<SignedInForCandidate signOut={props.signOut} />}
         </Menu.Item>
       </Menu>
     </div>
