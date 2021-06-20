@@ -13,7 +13,7 @@ export default function Dashboard() {
           <Grid.Column>
             <Filters />
           </Grid.Column>
-          <Grid.Column floated='right' width={13    }>
+          <Grid.Column floated='right' width={13}>
             <Route exact path= "/" component = {JobList} />
             <Route exact path= "/joblist" component = {JobList} />
             <Route path= "/joblist/:id" component = {JobDetail} />

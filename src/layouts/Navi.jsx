@@ -2,7 +2,7 @@ import React , {useState}from "react";
 import { Container, Menu,} from "semantic-ui-react";
 import SignOut from "./SignOut";
 import SignedIn from "./SignedIn";
-import { useHistory } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 
 export default function Navi(props) {
 
@@ -33,7 +33,7 @@ export default function Navi(props) {
     <div>
       <Menu inverted fixed="top">
         <Container>
-          <Menu.Item name="home" />
+          <Menu.Item as={NavLink} to={`/`} name="home" />
           <Menu.Item name="messages" />
 
           
